@@ -1,2 +1,2 @@
 * text=auto
-Rice_Leaf_Diease/** filter=lfs diff=lfs merge=lfs -text
+classification/Rice_Leaf_Diease/** filter=lfs diff=lfs merge=lfs -text

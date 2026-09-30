@@ -173,7 +173,7 @@ md("""## 8. ใช้โมเดลในแอปและตรวจคว�
 Gradio รับภาพ → preprocessing ร่วม → scaler + SVM ที่บันทึกไว้ → คะแนน 10 คลาสและภาพ RGB ที่เตรียมแล้ว มีแท็บเปรียบเทียบสองคลาสและผลประเมิน
 
 รันแอปจาก project root: `python app.py` แล้วเปิด http://127.0.0.1:7861
-ไฟล์ deploy เตรียมไว้และเพิ่มรายชื่อผู้จัดทำใน README แล้ว; GitHub: [https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification](https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification) ส่วน public URL ของแอปยังรอ deploy ดู `STATUS.md`""")
+ไฟล์ deploy เตรียมไว้และเพิ่มรายชื่อผู้จัดทำใน README แล้ว; GitHub: [https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression](https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression) ส่วน public URL ของแอปยังรอ deploy ดู `STATUS.md`""")
 code("""from rice_leaf_app.inference import get_predictor
 scores, preview, summary, rows = get_predictor().predict(ROOT / test_rows.iloc[0].path)
 display(Markdown(summary)); display(pd.DataFrame(rows, columns=['Class','Score (%)']))

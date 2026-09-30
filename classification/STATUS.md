@@ -1,6 +1,6 @@
 # สถานะงานตาม Purpose.md — เฉพาะ Classification
 
-ตรวจล่าสุด: **30 กันยายน 2026**
+ตรวจล่าสุด: **1 ตุลาคม 2026**
 
 ## รอบเพิ่มข้อมูลจาก more
 
@@ -14,6 +14,7 @@
 
 | ข้อกำหนด | สถานะ / หลักฐาน |
 |---|---|
+| เผยแพร่ GitHub repository และ dataset เต็ม | [NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression](https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression) แบบ Public; ภาพ 25,445 ไฟล์ผ่าน Git LFS (20,640 objects ไม่ซ้ำ), พร้อมโค้ด โมเดล notebook และรายชื่อผู้จัดทำ |
 | ชื่อและรหัสนิสิตผู้จัดทำ | เพิ่มครบ 4 คนใน README โดยเรียงรหัสนิสิตจากน้อยไปมากแล้ว |
 | ระบุปัญหา เป้าหมาย ประโยชน์ และคลาส | README และ notebook: 10 คลาส ใช้ชื่อโฟลเดอร์เป็น label |
 | แหล่งที่มาและสิทธิ์ใช้/เผยแพร่ | ผู้ใช้ให้ Kaggle loki4514/rice-leaf-diseases-detection; ชุดเดิม Apache 2.0; ชุดเพิ่ม alamshihab075/rice-leaf-disease-an-images-dataset เป็น MIT ตาม Kaggle metadata; บันทึกใน DATASET.md และแนบ DATASET-LICENSE-APACHE-2.0.txt |
@@ -40,9 +41,8 @@
 
 | รายการ | เหตุผล / สิ่งที่ต้องทำต่อ |
 |---|---|
-| **เผยแพร่ GitHub repository และ dataset เต็ม** | ยังไม่มี URL repository/บัญชีปลายทางจากผู้ใช้; ข้อมูลหลักยังอยู่ในเครื่องและไม่ถูก ignore; ต้องเลือกวิธีเก็บไฟล์ขนาดใหญ่ ตรวจสิทธิ์และ attribution แล้วอัปโหลดจริง |
 | **Public URL ของเว็บที่ไม่ต้องเปิดเครื่องนิสิต** | ยังไม่ได้ deploy ไปบัญชีโฮสต์ ไม่มี public URL; localhost ไม่ผ่านข้อกำหนดนี้ ไฟล์พร้อมนำไป deploy แล้ว |
-| **ตรวจการเข้าถึงแบบผู้สอน** | ทำหลังมี public repository และ URL: ทดสอบเปิดแบบไม่ล็อกอิน ทำนายได้จริง และดาวน์โหลด dataset ได้ |
+| **ตรวจการเข้าถึงแบบผู้สอน** | GitHub เป็น Public และตรวจไฟล์พร้อมตัวอย่างภาพ LFS แบบไม่ล็อกอินแล้ว; ยังต้อง deploy เว็บแอปและตรวจการทำนายผ่าน public URL |
 | **ตรวจภาพหน้าจอ/การคลิกผ่าน browser จริง** | เครื่องมือ browser รายงานว่าไม่มี browser surface; ลอง computer-use skill แล้ว native pipe ไม่พร้อม (`os error 2`); จึงยืนยันได้เฉพาะการสร้าง UI, callbacks และ HTTP end-to-end ไม่อ้างว่าตรวจภาพหน้าจอแล้ว |
 | ติดตั้งบนเครื่องใหม่และ deploy Docker | ยังไม่ได้ทดสอบ fresh OS/venv หรือ Docker build; ได้ตรวจเวอร์ชัน dependencies ที่ติดตั้งและรันตามคำสั่งใน runtime ของ workspace นี้แล้ว |
 
@@ -55,12 +55,12 @@
 
 ## ใช้งานตอนนี้
 
-จาก project root:
+จากโฟลเดอร์ `classification/`:
 
 ```powershell
-.\.runtime\python.exe app.py
+..\.runtime\python.exe app.py
 ```
 
 เปิด **http://127.0.0.1:7861** (เลือก 7861 เพราะเครื่องนี้มีแอปอื่นใช้ 7860 อยู่) ถ้าแอปกำลังทำงานอยู่ให้เปิด URL ได้เลย ไม่ต้องสั่งรันซ้ำ
 
-**Regression ไม่ได้ทำตามขอบเขตที่ผู้ใช้ระบุ** จึงไม่นับเป็นงานค้างของโปรเจกต์นี้
+รายงานนี้ครอบคลุมเฉพาะ Classification; รวมงาน MPG Regression ที่มีอยู่บน GitHub ไว้ใน `../regression_auto_mpg/` แล้ว โดยยังไม่ได้ทดสอบงาน Regression ในรอบนี้
