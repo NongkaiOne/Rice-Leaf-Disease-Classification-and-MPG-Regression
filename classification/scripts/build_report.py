@@ -44,7 +44,7 @@ pinned: false
 
 # Rice Leaf Disease Classifier
 
-เว็บ Gradio จำแนกภาพข้าว **10 คลาส** ด้วย SVM พร้อมเปรียบเทียบคะแนนทุกคลาส ภาพที่เตรียมแล้ว การเปรียบเทียบคลาสสองฝั่ง และผลประเมินรายคลาส ทำเฉพาะ **Image Classification** ตามคำขอ โดยอ้างอิงรายการส่งงานใน `Purpose.md` และรูปแบบอัปโหลด/Prediction/Processed image ของ `digit_svm_app`
+เว็บ Gradio จำแนกภาพข้าว **10 คลาส** ด้วย SVM พร้อมเปรียบเทียบคะแนนทุกคลาส ภาพที่เตรียมแล้ว การเปรียบเทียบคลาสสองฝั่ง และผลประเมินรายคลาส ทำเฉพาะ **Image Classification** ตามคำขอ โดยอ้างอิงรายการส่งงานใน ข้อกำหนดโครงการ และรูปแบบอัปโหลด/Prediction/Processed image ของ `digit_svm_app`
 
 ## แนวคิด ปัญหา และประโยชน์
 
@@ -158,14 +158,14 @@ py -3.12 -m venv .venv
 ## เผยแพร่และ URL สำหรับส่งงาน
 
 - **GitHub repository: [https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression](https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression)**
-- **Public Gradio App: ยังไม่ได้เผยแพร่ — ยังไม่มี public URL**
+- **Public Gradio App: [https://rice-leaf-classification.onrender.com/](https://rice-leaf-classification.onrender.com/)**
 - Local URL `http://127.0.0.1:7861` ใช้เฉพาะเครื่องนี้ ไม่ใช่ลิงก์ส่งผู้สอน
 
 เตรียม `app.py`, requirements แบบ pin version, model และ README metadata สำหรับ Hugging Face Spaces แล้ว สร้าง Space แบบ **Gradio / Python 3.12** และอัปโหลด `app.py`, `requirements.txt`, `README.md`, `DATASET.md`, license และ `rice_leaf_app/` ทั้งโฟลเดอร์ โดยไม่ต้องอัปโหลด dataset เต็มเพื่อรัน inference แอปรันจากโมเดลที่ฝึกจริง
 
-สำหรับโฮสต์ Docker มี `Dockerfile` เปิดพอร์ต 7860 และตั้ง GRADIO_SERVER_NAME=0.0.0.0; ยังไม่ได้ทดสอบ build/deploy บนโฮสต์จริง
+สำหรับโฮสต์ Docker มี `Dockerfile` เปิดพอร์ต 7860 และตั้ง GRADIO_SERVER_NAME=0.0.0.0; deploy บน Render แล้วตามการยืนยันของผู้ใช้
 
-เก็บ dataset เต็มบน GitHub ตาม Purpose.md ด้วยวิธีที่รองรับขนาดข้อมูล เช่น Git LFS แล้วตรวจสิทธิ์ผู้สอนและการดาวน์โหลดภาพจริง ใช้ [DATASET.md](DATASET.md) กำกับที่มา/สิทธิ์และเก็บ license upstream เติม URL จริงสองรายการด้านบนหลัง deploy และตรวจใน browser ที่ไม่ได้ล็อกอิน โดยให้บริการพร้อมในช่วงตรวจงาน ไม่ใช้ `share=True` ชั่วคราวแทน hosting ถาวร
+เก็บ dataset เต็มบน GitHub ตาม ข้อกำหนดโครงการ ด้วยวิธีที่รองรับขนาดข้อมูล เช่น Git LFS แล้วตรวจสิทธิ์ผู้สอนและการดาวน์โหลดภาพจริง ใช้ [DATASET.md](DATASET.md) กำกับที่มา/สิทธิ์และเก็บ license upstream ผู้ใช้ยืนยันการ deploy และคลิกใช้งานใน browser แล้ว; ตรวจ URL ด้านบนแบบไม่ล็อกอินสำหรับส่งงาน โดยให้บริการพร้อมในช่วงตรวจงาน ไม่ใช้ `share=True` ชั่วคราวแทน hosting ถาวร
 
 ## โครงสร้างสำคัญ
 
@@ -183,7 +183,7 @@ py -3.12 -m venv .venv
 | `notebooks/rice_leaf_classification.ipynb` | notebook พร้อมคำอธิบายและผลรัน |
 | `Rice_Leaf_Diease/Rice_Leaf_Diease/` | dataset ที่ใช้ train/test พร้อม labels |
 | `requirements.txt` | เวอร์ชันแพ็กเกจสำหรับติดตั้ง |
-| `STATUS.md` | รายการทำแล้ว/ยังไม่เสร็จตาม Purpose.md |
+| `STATUS.md` | รายการทำแล้ว/ยังไม่เสร็จตาม ข้อกำหนดโครงการ |
 
 ## ผู้จัดทำ
 

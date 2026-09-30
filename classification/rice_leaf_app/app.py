@@ -58,7 +58,24 @@ def build_app():
     css = """
     .gradio-container {max-width: 1180px !important;}
     #title {border-left: 5px solid #18815b; padding-left: 18px; margin-bottom: 12px;}
-    #summary {background: #edf8f1; border: 1px solid #bddccc; border-radius: 12px; padding: 16px;}
+    #summary {
+        --summary-bg: #edf8f1;
+        --summary-text: #153c29;
+        --summary-border: #bddccc;
+        background: var(--summary-bg);
+        border: 1px solid var(--summary-border);
+        border-radius: 12px;
+        padding: 16px;
+    }
+    .dark #summary {
+        --summary-bg: #163329;
+        --summary-text: #edf8f1;
+        --summary-border: #3b6953;
+    }
+    #summary, #summary :is(h1, h2, h3, p, strong, span, li) {
+        color: var(--summary-text) !important;
+    }
+    #summary *::selection {background: #245d43; color: #ffffff;}
     """
     with gr.Blocks(title="Rice Leaf Disease Classifier", theme=gr.themes.Soft(primary_hue="green"), css=css) as app:
         gr.Markdown("# Rice Leaf Disease Classifier\nจำแนกภาพข้าว 10 คลาสด้วย SVM · เปรียบเทียบผลระหว่างคลาส", elem_id="title")

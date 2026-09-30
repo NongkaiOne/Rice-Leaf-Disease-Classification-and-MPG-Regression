@@ -1,5 +1,7 @@
 # Deploy Classification on Render
 
+Public app: https://rice-leaf-classification.onrender.com/ (deployment confirmed by the user).
+
 Use the repository's root `render.yaml` Blueprint. It creates a free Docker web service with `classification/` as its root directory and `/` as its health check.
 
 [Deploy to Render](https://render.com/deploy?repo=https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression)
