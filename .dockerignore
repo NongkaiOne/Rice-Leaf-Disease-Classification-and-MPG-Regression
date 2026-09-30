@@ -1,0 +1,8 @@
+.git
+.venv
+.runtime
+tmp
+digit_svm_app
+Rice_Leaf_AUG
+Rice_Leaf_Diease
+__pycache__

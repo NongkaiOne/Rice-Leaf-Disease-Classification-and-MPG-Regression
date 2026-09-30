@@ -1,0 +1,10 @@
+{
+  "ref": "alamshihab075/rice-leaf-disease-an-images-dataset",
+  "title": "Rice Leaf Disease: An Images Dataset",
+  "url": "https://www.kaggle.com/datasets/alamshihab075/rice-leaf-disease-an-images-dataset",
+  "user_provided_url": "https://www.kaggle.com/datasets/alamshihab075/rice-leaf-disease-an-images-dataset/data?select=Rice+Disease",
+  "licenseName": "MIT",
+  "checked_date": "2026-09-30",
+  "metadata_endpoint": "https://www.kaggle.com/api/v1/datasets/list?search=rice%20leaf%20disease%20an%20images%20dataset",
+  "applies_to": "User-supplied more images (Healthy, Leaf Blast, Sheath Blight)"
+}

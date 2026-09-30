@@ -1,0 +1,13 @@
+.venv/
+.runtime/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.gradio/
+tmp/
+.env
+*.log
+# Reference digit project is unrelated to this submission.
+digit_svm_app/
+# Unused augmentation set; primary labeled dataset remains included.
+Rice_Leaf_AUG/

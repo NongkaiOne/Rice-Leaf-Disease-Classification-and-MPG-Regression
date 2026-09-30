@@ -1,0 +1,242 @@
+{
+  "accuracy": 0.9109062980030722,
+  "macro_f1": 0.9017306521507275,
+  "weighted_f1": 0.9091387323912228,
+  "train_count": 14701,
+  "test_count": 3255,
+  "fit_count": 11760,
+  "validation_count": 2941,
+  "raw_count": 18445,
+  "excluded_count": 489,
+  "best_C": 10.0,
+  "candidates": [
+    {
+      "C": 1.0,
+      "validation_macro_f1": 0.8887659281692516
+    },
+    {
+      "C": 10.0,
+      "validation_macro_f1": 0.9499781818649484
+    }
+  ],
+  "classes": [
+    "bacterial_leaf_blight",
+    "brown_spot",
+    "healthy",
+    "leaf_blast",
+    "leaf_scald",
+    "narrow_brown_spot",
+    "neck_blast",
+    "rice_hispa",
+    "sheath_blight",
+    "tungro"
+  ],
+  "report": {
+    "bacterial_leaf_blight": {
+      "precision": 0.9968553459119497,
+      "recall": 0.9968553459119497,
+      "f1-score": 0.9968553459119497,
+      "support": 318.0
+    },
+    "brown_spot": {
+      "precision": 0.9469026548672567,
+      "recall": 0.9197707736389685,
+      "f1-score": 0.9331395348837209,
+      "support": 349.0
+    },
+    "healthy": {
+      "precision": 0.8125,
+      "recall": 0.9666666666666667,
+      "f1-score": 0.882903981264637,
+      "support": 390.0
+    },
+    "leaf_blast": {
+      "precision": 0.859504132231405,
+      "recall": 0.8914285714285715,
+      "f1-score": 0.8751753155680224,
+      "support": 350.0
+    },
+    "leaf_scald": {
+      "precision": 0.9667673716012085,
+      "recall": 0.9302325581395349,
+      "f1-score": 0.9481481481481482,
+      "support": 344.0
+    },
+    "narrow_brown_spot": {
+      "precision": 0.9373219373219374,
+      "recall": 0.90633608815427,
+      "f1-score": 0.9215686274509803,
+      "support": 363.0
+    },
+    "neck_blast": {
+      "precision": 0.9847094801223242,
+      "recall": 1.0,
+      "f1-score": 0.9922958397534669,
+      "support": 322.0
+    },
+    "rice_hispa": {
+      "precision": 0.8609271523178808,
+      "recall": 0.5777777777777777,
+      "f1-score": 0.6914893617021277,
+      "support": 225.0
+    },
+    "sheath_blight": {
+      "precision": 0.7625418060200669,
+      "recall": 0.8028169014084507,
+      "f1-score": 0.7821612349914236,
+      "support": 284.0
+    },
+    "tungro": {
+      "precision": 0.9903846153846154,
+      "recall": 0.9967741935483871,
+      "f1-score": 0.9935691318327974,
+      "support": 310.0
+    },
+    "accuracy": 0.9109062980030722,
+    "macro avg": {
+      "precision": 0.9118414495778644,
+      "recall": 0.8988658876674578,
+      "f1-score": 0.9017306521507275,
+      "support": 3255.0
+    },
+    "weighted avg": {
+      "precision": 0.9131651236430675,
+      "recall": 0.9109062980030722,
+      "f1-score": 0.9091387323912228,
+      "support": 3255.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      317,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      321,
+      11,
+      14,
+      0,
+      0,
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      0,
+      4,
+      377,
+      7,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      8,
+      10,
+      312,
+      1,
+      9,
+      2,
+      3,
+      3,
+      2
+    ],
+    [
+      0,
+      1,
+      4,
+      4,
+      320,
+      0,
+      0,
+      5,
+      10,
+      0
+    ],
+    [
+      1,
+      4,
+      1,
+      13,
+      3,
+      329,
+      0,
+      0,
+      12,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      322,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      49,
+      0,
+      0,
+      0,
+      3,
+      130,
+      42,
+      1
+    ],
+    [
+      0,
+      1,
+      11,
+      13,
+      6,
+      13,
+      0,
+      12,
+      228,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      309
+    ]
+  ],
+  "feature_version": "rgb-hsv-gradient-v1",
+  "feature_count": 404,
+  "seed": 42,
+  "prediction_rule": "argmax(predict_proba)",
+  "versions": {
+    "numpy": "2.2.6",
+    "Pillow": "11.3.0",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2",
+    "gradio": "5.49.1"
+  }
+}

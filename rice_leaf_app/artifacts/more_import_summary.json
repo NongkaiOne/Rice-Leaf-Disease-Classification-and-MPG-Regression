@@ -1,0 +1,39 @@
+{
+  "source_count": 7040,
+  "copied_unique_files": 7000,
+  "new_pixel_groups": 2684,
+  "seed": 42,
+  "counts": [
+    {
+      "label": "healthy",
+      "split": "test",
+      "count": 606
+    },
+    {
+      "label": "healthy",
+      "split": "train",
+      "count": 2346
+    },
+    {
+      "label": "leaf_blast",
+      "split": "test",
+      "count": 617
+    },
+    {
+      "label": "leaf_blast",
+      "split": "train",
+      "count": 2839
+    },
+    {
+      "label": "sheath_blight",
+      "split": "test",
+      "count": 357
+    },
+    {
+      "label": "sheath_blight",
+      "split": "train",
+      "count": 275
+    }
+  ],
+  "source_deleted": true
+}

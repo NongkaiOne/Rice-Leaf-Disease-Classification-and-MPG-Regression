@@ -1,0 +1,11 @@
+label,raw_test,raw_train,used_test,used_train
+bacterial_leaf_blight,376,1386,318,1386
+brown_spot,380,1480,349,1480
+healthy,994,3836,603,2345
+leaf_blast,967,4620,605,2819
+leaf_scald,386,1670,344,1670
+narrow_brown_spot,382,1416,363,1416
+neck_blast,322,1000,322,678
+rice_hispa,225,1461,225,1461
+sheath_blight,641,1853,353,1853
+tungro,310,1740,310,1740
