@@ -15,6 +15,7 @@
 | ข้อกำหนด | สถานะ / หลักฐาน |
 |---|---|
 | เผยแพร่ GitHub repository และ dataset เต็ม | [NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression](https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression) แบบ Public; ภาพ 25,445 ไฟล์ผ่าน Git LFS (20,640 objects ไม่ซ้ำ), พร้อมโค้ด โมเดล notebook และรายชื่อผู้จัดทำ |
+| ตรวจการเข้าถึงแบบผู้สอน | GitHub และภาพตัวอย่าง LFS เข้าถึงได้แบบไม่ล็อกอิน; ทดสอบ public Render URL ผ่าน HTTP จริง: อัปโหลด/จำแนก 10 คลาส ดาวน์โหลด preview และแจ้งเตือนเมื่อไม่มีภาพ ผ่านทั้งหมด; รายงาน `rice_leaf_app/artifacts/smoke_test.json` |
 | Deploy Classification บน Render | [https://rice-leaf-classification.onrender.com/](https://rice-leaf-classification.onrender.com/) — ผู้ใช้ยืนยันว่า deploy แล้ว |
 | ตรวจภาพหน้าจอ/การคลิกผ่าน browser จริง | ผู้ใช้ยืนยันว่าคลิกใช้งานได้และส่งภาพหน้าจอผลทำนาย; พบสีข้อความกล่องผลลัพธ์อ่านยากในโหมดมืด จึงแก้สีพื้นหลังและข้อความให้เข้าคู่กัน |
 | ชื่อและรหัสนิสิตผู้จัดทำ | เพิ่มครบ 4 คนใน README โดยเรียงรหัสนิสิตจากน้อยไปมากแล้ว |
@@ -43,7 +44,6 @@
 
 | รายการ | เหตุผล / สิ่งที่ต้องทำต่อ |
 |---|---|
-| **ตรวจการเข้าถึงแบบผู้สอน** | GitHub เป็น Public และตรวจไฟล์พร้อมตัวอย่างภาพ LFS แบบไม่ล็อกอินแล้ว; ผู้ใช้ยืนยันว่า deploy และคลิกใช้งานแล้ว; รอตรวจ HTTP ของเวอร์ชัน UI ล่าสุดผ่าน public URL |
 | ติดตั้งบนเครื่องใหม่ | ยังไม่ได้ทดสอบ fresh OS/venv; ผู้ใช้ยืนยัน deploy บน Render แล้ว |
 
 ## ข้อจำกัดของผลโมเดล

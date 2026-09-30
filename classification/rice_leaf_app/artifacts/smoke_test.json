@@ -1,6 +1,6 @@
 {
   "status": "pass",
-  "url": "http://127.0.0.1:7862",
+  "url": "https://rice-leaf-classification.onrender.com",
   "examples": [
     {
       "example": "bacterial_leaf_blight",
