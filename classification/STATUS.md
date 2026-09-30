@@ -64,3 +64,6 @@
 เปิด **http://127.0.0.1:7861** (เลือก 7861 เพราะเครื่องนี้มีแอปอื่นใช้ 7860 อยู่) ถ้าแอปกำลังทำงานอยู่ให้เปิด URL ได้เลย ไม่ต้องสั่งรันซ้ำ
 
 รายงานนี้ครอบคลุมเฉพาะ Classification; รวมงาน MPG Regression ที่มีอยู่บน GitHub ไว้ใน `../regression_auto_mpg/` แล้ว โดยยังไม่ได้ทดสอบงาน Regression ในรอบนี้
+
+
+Render deployment: [Setup guide](RENDER.md) ? Blueprint prepared; account access, service creation, and public URL verification are pending.

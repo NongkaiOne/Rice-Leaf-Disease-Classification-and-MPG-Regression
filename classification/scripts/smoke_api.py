@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT))
 from rice_leaf_app.config import APP_DIR, CLASSES
 from rice_leaf_app.inference import get_predictor
 
-url = "http://127.0.0.1:7861"
+url = sys.argv[1].rstrip("/") if len(sys.argv) > 1 else "http://127.0.0.1:7861"
 client = Client(url, verbose=False)
 results = []
 for label in CLASSES:

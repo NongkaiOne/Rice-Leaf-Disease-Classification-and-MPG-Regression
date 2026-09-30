@@ -185,3 +185,6 @@ py -3.12 -m venv .venv
 - [Gradio Blocks](https://www.gradio.app/docs/gradio/blocks)
 - [scikit-learn SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html)
 - [Hugging Face Spaces configuration](https://huggingface.co/docs/hub/spaces-config-reference)
+
+
+Render deployment: [Setup guide](RENDER.md) ? Blueprint prepared; account access, service creation, and public URL verification are pending.

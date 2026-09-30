@@ -30,3 +30,6 @@ git lfs pull
 | 6730300868 | นายพัศสพล ราตรีวิจิตร์ |
 
 แหล่งข้อมูลและสิทธิ์ภาพ: [DATASET.md](classification/DATASET.md) · สถานะงาน Classification: [STATUS.md](classification/STATUS.md)
+
+
+Render deployment: [Setup guide](classification/RENDER.md) ? Blueprint prepared; account access, service creation, and public URL verification are pending.
