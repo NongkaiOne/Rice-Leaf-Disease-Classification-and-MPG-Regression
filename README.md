@@ -34,3 +34,5 @@ git lfs pull
 
 
 Classification บน Render: [https://rice-leaf-classification.onrender.com/](https://rice-leaf-classification.onrender.com/)
+
+MPG deploy แยกบน Render: ใช้ Blueprint Path `render-mpg.yaml` ([ขั้นตอน](regression_auto_mpg/README.md#10-deployment)); เตรียมไฟล์แล้ว รอผู้ใช้สร้าง service และส่ง URL

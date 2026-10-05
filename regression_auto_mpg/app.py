@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 import gradio as gr
@@ -51,4 +52,8 @@ demo = gr.Interface(
 )
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(
+        server_name=os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1"),
+        server_port=int(os.environ.get("PORT", "7860")),
+        share=False,
+    )

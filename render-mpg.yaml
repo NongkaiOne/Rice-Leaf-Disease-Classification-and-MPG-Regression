@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: auto-mpg-regression
+    runtime: docker
+    plan: free
+    branch: main
+    rootDir: regression_auto_mpg
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /
+    envVars:
+      - key: GRADIO_SERVER_NAME
+        value: 0.0.0.0
+      - key: GRADIO_ANALYTICS_ENABLED
+        value: "False"
+      - key: OMP_NUM_THREADS
+        value: "1"
+      - key: OPENBLAS_NUM_THREADS
+        value: "1"
+      - key: GIT_LFS_SKIP_SMUDGE
+        value: "1"

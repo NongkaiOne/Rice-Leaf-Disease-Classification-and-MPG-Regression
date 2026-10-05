@@ -106,8 +106,24 @@ origin = 1
 ```
 
 ## 10. Deployment
-สามารถนำ `app.py`, `model.joblib` และ `requirements.txt`
-ไป deploy บน Hugging Face Spaces (Gradio) ได้
+เตรียม Docker และ Blueprint `../render-mpg.yaml` สำหรับ Render แยกจาก Rice แล้ว
+
+ใน Render เลือก **New → Web Service** แล้วเลือก repository นี้ ตั้งค่า:
+
+- Name: `auto-mpg-regression`
+- Root Directory: `regression_auto_mpg`
+- Runtime: Docker
+- Dockerfile Path: `./Dockerfile`
+- Docker Build Context: `.`
+- Instance Type: Free
+- Health Check Path: `/`
+- Environment: `GIT_LFS_SKIP_SMUDGE=1`
+
+หรือเลือก **New → Blueprint** แล้วตั้ง **Blueprint Path เป็น `render-mpg.yaml`** เพื่อสร้างเฉพาะ MPG
+แอปอ่าน `PORT` จาก Render และฟังที่ `0.0.0.0` โหลดโมเดลเดิมโดยไม่ฝึกใหม่
+
+สถานะ: เตรียมไฟล์ deploy แล้ว ยังไม่ยืนยันการสร้าง service หรือ public URL
+Render Free พัก service เมื่อไม่มีการใช้งาน จึงอาจต้องรอเปิดครั้งแรก
 
 **Regression App URL:** ใส่ URL หลัง deploy สำเร็จ
 
