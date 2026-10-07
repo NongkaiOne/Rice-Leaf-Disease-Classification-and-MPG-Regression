@@ -5,7 +5,7 @@
 | งาน | โฟลเดอร์และวิธีใช้งาน |
 |---|---|
 | จำแนกภาพโรคข้าว 10 คลาสด้วย SVM | [classification/](classification/README.md) — โค้ด โมเดล notebook และ dataset ภาพ 25,445 ไฟล์ |
-| ทำนายอัตราประหยัดเชื้อเพลิงรถยนต์ (MPG) | [regression_auto_mpg/](regression_auto_mpg/README.md) — โค้ด โมเดล notebook และข้อมูล Auto MPG |
+| ทำนายอัตราประหยัดเชื้อเพลิงรถยนต์ (MPG) | [regression_auto_mpg/](regression_auto_mpg/README.md) — เว็บทำนาย MPG พร้อมส่วนผลประเมินและวิธีใช้งาน โมเดลเดิม notebook และข้อมูล Auto MPG |
 
 ## ดาวน์โหลดพร้อม dataset
 
