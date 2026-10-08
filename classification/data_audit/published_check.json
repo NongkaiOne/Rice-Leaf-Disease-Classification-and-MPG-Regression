@@ -1,0 +1,43 @@
+{
+  "main_status": 200,
+  "main_sha": "c35294b1cf5e1a4ee6b1a65668315e79f104e8f5",
+  "train": {
+    "status": 200,
+    "folders": [
+      "bacterial_leaf_blight",
+      "brown_spot",
+      "healthy",
+      "leaf_blast",
+      "sheath_blight"
+    ]
+  },
+  "test": {
+    "status": 200,
+    "folders": [
+      "Sheath Blight",
+      "bacterial_leaf_blight",
+      "brown_spot",
+      "healthy",
+      "leaf_blast"
+    ]
+  },
+  "cnn_metadata_status": 200,
+  "architecture": "densenet121",
+  "classes": [
+    "rice_blast",
+    "bacterial_leaf_blight",
+    "sheath_blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "render_config_status": 200,
+  "render_model_choices": [],
+  "render_has_cnn_svm_selector": false,
+  "render_title": [
+    "# Rice Leaf Disease Classifier\nจำแนกภาพข้าว 10 คลาสด้วย SVM · เปรียบเทียบผลระหว่างคลาส"
+  ],
+  "github_commit_status": {
+    "state": "pending",
+    "checks": []
+  }
+}
