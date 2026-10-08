@@ -1,0 +1,62 @@
+[
+  {
+    "split": "train",
+    "folder": "bacterial_leaf_blight",
+    "files": 1386,
+    "bytes": 140283225
+  },
+  {
+    "split": "train",
+    "folder": "brown_spot",
+    "files": 1480,
+    "bytes": 192088170
+  },
+  {
+    "split": "train",
+    "folder": "healthy",
+    "files": 3836,
+    "bytes": 2011965436
+  },
+  {
+    "split": "train",
+    "folder": "leaf_blast",
+    "files": 4620,
+    "bytes": 1464893599
+  },
+  {
+    "split": "train",
+    "folder": "sheath_blight",
+    "files": 1853,
+    "bytes": 388315065
+  },
+  {
+    "split": "test",
+    "folder": "bacterial_leaf_blight",
+    "files": 376,
+    "bytes": 40958527
+  },
+  {
+    "split": "test",
+    "folder": "brown_spot",
+    "files": 380,
+    "bytes": 73332082
+  },
+  {
+    "split": "test",
+    "folder": "healthy",
+    "files": 994,
+    "bytes": 806590152
+  },
+  {
+    "split": "test",
+    "folder": "leaf_blast",
+    "files": 967,
+    "bytes": 454473850
+  },
+  {
+    "split": "test",
+    "folder": "Sheath Blight",
+    "files": 641,
+    "bytes": 619754895
+  }
+]

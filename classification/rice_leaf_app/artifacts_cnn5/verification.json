@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "classes": [
+    "rice_blast",
+    "bacterial_leaf_blight",
+    "sheath_blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "test_images_verified": 2228,
+  "onnx_predictions_match_report": true,
+  "empty_upload": "pass",
+  "all_25_class_pairs": "pass",
+  "seconds": 134.08689212799072,
+  "backend": "ONNX Runtime CPU"
+}

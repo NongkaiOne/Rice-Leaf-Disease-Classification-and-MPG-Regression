@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "raw_images": 16533,
+  "model_images": 11782,
+  "fit": 8186,
+  "validation": 1368,
+  "test": 2228,
+  "models": [
+    "DenseNet121 CNN",
+    "five-class SVM"
+  ],
+  "all_25_class_pairs": "pass",
+  "only_five_dataset_classes": true,
+  "all_manifest_paths_exist": true
+}

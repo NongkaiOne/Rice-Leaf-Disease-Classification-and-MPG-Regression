@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.venv/
+tmp/
+data_audit/cleanup_plan.json
+experiments/cnn5/environment-training.txt

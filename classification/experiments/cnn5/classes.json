@@ -1,0 +1,42 @@
+[
+  {
+    "label": "rice_blast",
+    "english": "Rice Blast",
+    "thai": "โรคไหม้",
+    "source_labels": [
+      "leaf_blast"
+    ]
+  },
+  {
+    "label": "bacterial_leaf_blight",
+    "english": "Bacterial Leaf Blight",
+    "thai": "โรคขอบใบแห้ง",
+    "source_labels": [
+      "bacterial_leaf_blight"
+    ]
+  },
+  {
+    "label": "sheath_blight",
+    "english": "Sheath Blight",
+    "thai": "โรคกาบใบแห้ง",
+    "source_labels": [
+      "sheath_blight"
+    ]
+  },
+  {
+    "label": "brown_spot",
+    "english": "Brown Spot",
+    "thai": "โรคใบจุดสีน้ำตาล",
+    "source_labels": [
+      "brown_spot"
+    ]
+  },
+  {
+    "label": "healthy",
+    "english": "Healthy Rice Leaf",
+    "thai": "ใบข้าวปกติ",
+    "source_labels": [
+      "healthy"
+    ]
+  }
+]

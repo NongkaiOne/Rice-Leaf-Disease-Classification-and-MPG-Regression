@@ -1,32 +1,17 @@
-# Dataset provenance
+# Dataset — 5 retained classes
 
-- Dataset: **Rice Leaf Diseases Detection**
-- Publisher/account: **loki4514** on Kaggle (do not infer the person's real name)
-- Source: https://www.kaggle.com/datasets/loki4514/rice-leaf-diseases-detection
-- Kaggle public metadata API: https://www.kaggle.com/api/v1/datasets/list?search=rice%20leaf%20diseases%20detection
-- Metadata checked: **2026-09-30**; matching `ref` is `loki4514/rice-leaf-diseases-detection`; `licenseName` is **Apache 2.0**.
-- License text: https://www.apache.org/licenses/LICENSE-2.0 (standard text included as `DATASET-LICENSE-APACHE-2.0.txt`)
-- The local dataset was supplied by the user; this project does not claim authorship of the images.
-- Keep attribution, the Apache 2.0 license, and any upstream copyright/NOTICE files with redistributed data. No upstream NOTICE was found in the supplied folders. The Kaggle license declaration is recorded here; individual original image provenance has not been independently verified.
+Kept **16,533 image files**, 6.19 GB of file content (including duplicate copies); original train/test folders remain. Only Leaf Blast, Bacterial Leaf Blight, Sheath Blight, Brown Spot and Healthy remain. Leaf Blast maps to rice_blast; spaces/case in Sheath Blight map to sheath_blight. All other class folders and the unused Rice_Leaf_AUG were deleted at the user's request. Historical Git commits/LFS objects are not rewritten.
 
-## Data used
+After audit, active manifest uses fit 8,186 / validation 1,368 / test 2,228. The 329 quarantine records are excluded from training. Pixel hashes and inclusion reasons: data_audit/dataset_manifest.csv. Frozen group-aware split: experiments/cnn5/manifest.csv (StratifiedGroupKFold 7 folds, seed 42). Similarity groups are proxies, not verified leaf/plant IDs; test was used in earlier studies and is not a new holdout.
 
-`Rice_Leaf_Diease/Rice_Leaf_Diease/train/<class>/*` and `test/<class>/*` now contain **25,445 images** before filtering: **20,462 train** and **4,983 test**. Counts must be read from `rice_leaf_app/artifacts/class_counts.csv` after running the audit; that generated report is authoritative if the files change.
+## Sources and redistribution notices
 
-Labels come from class folder names. Spaces are normalized to underscores and names to lowercase, mapping `Neck_Blast` to `neck_blast`, `Rice Hispa` to `rice_hispa`, `Sheath Blight` to `sheath_blight`, and `Tungro` to `tungro`. All 10 classes are explicitly defined in `rice_leaf_app/config.py`. Neck Blast includes the panicle/neck class, so the project is not strictly restricted to leaf-only imagery.
+- [Rice Leaf Diseases Detection — loki4514](https://www.kaggle.com/datasets/loki4514/rice-leaf-diseases-detection): Kaggle metadata checked 2026-09-30 declared Apache 2.0. Standard text retained in DATASET-LICENSE-APACHE-2.0.txt. No upstream NOTICE was found in the supplied folders; the project does not claim authorship of these images.
+- [Rice Leaf Disease: An Images Dataset — alamshihab075](https://www.kaggle.com/datasets/alamshihab075/rice-leaf-disease-an-images-dataset): user identified this as the source of added Healthy/Leaf Blast/Sheath Blight images. Metadata checked 2026-09-30 declared MIT; record in data_audit/more_source_metadata.json. This source is separate from Apache 2.0. Individual upstream image ownership has not been independently established; an upstream MIT copyright notice was not supplied and must not be fabricated or replaced with the Apache notice.
+- data_audit/more_import_manifest.csv retains source/destination paths and byte/pixel hashes for the imported images. Labels are derived from the source class folders. Some augmented images lack original-image IDs, which limits leakage guarantees.
 
-The original train/test folders are preserved. The audit excludes unreadable images, identical decoded RGB pixels, and identical pixels with conflicting labels. When an exact duplicate appears in both splits, its training copy is excluded; original files are never deleted. `dataset_manifest.csv` records every scanned image, label, pixel hash, inclusion status, and reason. `split_manifest.csv` records the deterministic development split (80% fit / 20% validation of eligible train; seed 42).
+## Download
 
-The separate `Rice_Leaf_AUG` folder has **11,790 images and 9 classes**, with no Tungro folder. It is not used or merged into training. Source-image IDs are unavailable, so exact deduplication cannot guarantee the absence of near duplicates, augmented relatives, or the same plant across splits. This limits interpretation of the test score. A future field-level evaluation should split by original plant/field before augmentation.
+Images are tracked with Git LFS. Run git lfs install, clone the public repository, then git lfs pull. A GitHub page showing a pointer is not a downloaded image; real objects must be retrievable. Current access checks and any outstanding checks are recorded in PURPOSE_CHECKLIST.md/STATUS.md.
 
-## Additional user-supplied images from more
-
-Imported **7,040 source files**, retaining **7,000 distinct byte-content copies** in the existing class folders. There are **2,684 new decoded-pixel groups** beyond the original dataset. New groups are split approximately 80/20 per class with seed 42. Exact matches retain the existing split (test takes precedence if the old dataset already contained a cross-split duplicate). No existing dataset file was overwritten. Source/destination paths, labels, split assignments, and byte/pixel checksums are recorded in `rice_leaf_app/artifacts/more_import_manifest.csv`.
-
-The user supplied these additions in Healthy, Leaf Blast and Sheath Blight folders. The user identified [Rice Leaf Disease: An Images Dataset — alamshihab075, Kaggle](https://www.kaggle.com/datasets/alamshihab075/rice-leaf-disease-an-images-dataset) as their source. Kaggle public metadata was checked on 2026-09-30 and declares **MIT** for `alamshihab075/rice-leaf-disease-an-images-dataset`. This is separate from the original dataset's Apache 2.0 license; `DATASET-LICENSE-APACHE-2.0.txt` applies only to the original source. Preserve the upstream MIT license and copyright notice when redistributing the additional images; do not replace them with the Apache text. Images named `aug_*` still lack reliable original-image IDs, so near-duplicate/augmentation leakage remains a limitation.
-
-The source folder `more` is **deleted after successful training and checksum verification**. Test composition expanded, so new and previous aggregate scores are not directly comparable.
-
-## Publishing the dataset
-
-The primary dataset is retained locally and is not ignored by `.gitignore`. It is published at [https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression](https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression) with **25,445 image paths backed by Git LFS (20,640 distinct objects)**. Run `git lfs install`, clone the repository, and run `git lfs pull` to download real images. Check repository storage limits before uploading the full dataset; use Git LFS if required and verify that the teacher can download the actual image objects, not only pointer files. Include `DATASET.md` and the upstream license alongside the data. The unused AUG data is excluded by `.gitignore`; the unrelated digit example was removed from the workspace.
+Inventory: data_audit/retained_inventory.json. Removal log: data_audit/cleanup_completed.json. Models and app do not load unused class data.

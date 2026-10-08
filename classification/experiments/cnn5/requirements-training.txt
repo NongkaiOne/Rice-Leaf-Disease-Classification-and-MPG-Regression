@@ -1,0 +1,11 @@
+﻿# Training only; install CUDA torch wheels from the official index separately.
+torch==2.7.1
+torchvision==0.22.1
+numpy==2.2.6
+Pillow==11.3.0
+pandas==2.3.3
+scikit-learn==1.7.2
+joblib==1.5.2
+matplotlib==3.10.6
+onnx==1.19.0
+onnxruntime==1.23.2

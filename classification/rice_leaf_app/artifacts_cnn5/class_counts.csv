@@ -1,0 +1,6 @@
+label,raw_train,raw_test,used_train,validation,used_test
+rice_blast,4620,967,2235,377,605
+bacterial_leaf_blight,1386,376,1182,195,318
+sheath_blight,1853,641,1588,265,353
+brown_spot,1480,380,1229,207,349
+healthy,3836,994,1952,324,603

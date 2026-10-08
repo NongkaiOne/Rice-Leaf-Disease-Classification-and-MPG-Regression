@@ -1,0 +1,41 @@
+{
+  "anonymous": true,
+  "samples": [
+    {
+      "label": "bacterial_leaf_blight",
+      "path": "Rice_Leaf_Diease/Rice_Leaf_Diease/test/bacterial_leaf_blight/1601885203_image2.jpg",
+      "status": 200,
+      "sha256_matches": true,
+      "bytes": 168263
+    },
+    {
+      "label": "brown_spot",
+      "path": "Rice_Leaf_Diease/Rice_Leaf_Diease/test/brown_spot/20231006_165551(0).jpg",
+      "status": 200,
+      "sha256_matches": true,
+      "bytes": 687030
+    },
+    {
+      "label": "healthy",
+      "path": "Rice_Leaf_Diease/Rice_Leaf_Diease/test/healthy/20231006_163255.jpg",
+      "status": 200,
+      "sha256_matches": true,
+      "bytes": 635901
+    },
+    {
+      "label": "rice_blast",
+      "path": "Rice_Leaf_Diease/Rice_Leaf_Diease/test/leaf_blast/20231006_164402.jpg",
+      "status": 200,
+      "sha256_matches": true,
+      "bytes": 626992
+    },
+    {
+      "label": "sheath_blight",
+      "path": "Rice_Leaf_Diease/Rice_Leaf_Diease/test/Sheath Blight/IMG_20231006_163217 - Copy.jpg",
+      "status": 200,
+      "sha256_matches": true,
+      "bytes": 854128
+    }
+  ],
+  "all_pass": true
+}

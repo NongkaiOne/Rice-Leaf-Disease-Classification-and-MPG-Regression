@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-09",
+  "python": "3.12",
+  "fresh_environment": true,
+  "requirements_install": "pass",
+  "pip_check": "pass",
+  "http_predictions": "2 models x 5 classes pass",
+  "note": "Created a fresh venv and installed classification/requirements.txt; no Torch used by app"
+}

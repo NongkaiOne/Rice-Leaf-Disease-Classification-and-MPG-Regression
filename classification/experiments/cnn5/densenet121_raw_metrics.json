@@ -1,0 +1,118 @@
+{
+  "accuracy": 0.9766606822262118,
+  "macro_f1": 0.980785831297992,
+  "weighted_f1": 0.9767299721993511,
+  "minimum_recall": 0.966832504145937,
+  "minimum_recall_class": "healthy",
+  "coverage": 1.0,
+  "accepted_accuracy": 0.9766606822262118,
+  "rejected": 0,
+  "classes": [
+    "rice_blast",
+    "bacterial_leaf_blight",
+    "sheath_blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "confusion_matrix": [
+    [
+      586,
+      0,
+      1,
+      2,
+      16,
+      0
+    ],
+    [
+      0,
+      318,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      348,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      0,
+      341,
+      0,
+      0
+    ],
+    [
+      19,
+      0,
+      0,
+      1,
+      583,
+      0
+    ]
+  ],
+  "confusion_columns": [
+    "rice_blast",
+    "bacterial_leaf_blight",
+    "sheath_blight",
+    "brown_spot",
+    "healthy",
+    "uncertain"
+  ],
+  "report": {
+    "rice_blast": {
+      "precision": 0.948220064724919,
+      "recall": 0.968595041322314,
+      "f1-score": 0.9582992641046607,
+      "support": 605.0
+    },
+    "bacterial_leaf_blight": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 318.0
+    },
+    "sheath_blight": {
+      "precision": 0.997134670487106,
+      "recall": 0.9858356940509915,
+      "f1-score": 0.9914529914529915,
+      "support": 353.0
+    },
+    "brown_spot": {
+      "precision": 0.9912790697674418,
+      "recall": 0.9770773638968482,
+      "f1-score": 0.9841269841269841,
+      "support": 349.0
+    },
+    "healthy": {
+      "precision": 0.9732888146911519,
+      "recall": 0.966832504145937,
+      "f1-score": 0.9700499168053245,
+      "support": 603.0
+    },
+    "accuracy": 0.9766606822262118,
+    "macro avg": {
+      "precision": 0.9819845239341237,
+      "recall": 0.9796681206832181,
+      "f1-score": 0.980785831297992,
+      "support": 2228.0
+    },
+    "weighted avg": {
+      "precision": 0.9768901384417085,
+      "recall": 0.9766606822262118,
+      "f1-score": 0.9767299721993511,
+      "support": 2228.0
+    }
+  },
+  "train_count": 8186,
+  "validation_count": 1368,
+  "test_count": 2228,
+  "threshold": 0,
+  "architecture": "densenet121",
+  "policy": "raw"
+}

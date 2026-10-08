@@ -1,0 +1,16 @@
+{
+  "selected_architecture": "densenet121",
+  "candidates": [
+    {
+      "architecture": "efficientnet_b0",
+      "validation_macro_f1": 0.9869786555319431,
+      "threshold": 0.6
+    },
+    {
+      "architecture": "densenet121",
+      "validation_macro_f1": 0.9874036490389029,
+      "threshold": 0.5
+    }
+  ],
+  "selection": "validation macro F1 only; thresholds from validation with coverage>=95%, accuracy/min recall loss<=1pp; freeze before test"
+}

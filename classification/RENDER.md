@@ -1,19 +1,11 @@
-# Deploy Classification on Render
+# Classification on Render
 
-Public app: https://rice-leaf-classification.onrender.com/ (deployment confirmed by the user).
+Public URL: https://rice-leaf-classification.onrender.com/
 
-Use the repository's root `render.yaml` Blueprint. It creates a free Docker web service with `classification/` as its root directory and `/` as its health check.
+The updated app contains DenseNet121 and SVM, five classes, model selection and an Evaluation comparison. Current external verification status is recorded in STATUS.md; the existence of the URL alone does not confirm that this version is deployed.
 
-[Deploy to Render](https://render.com/deploy?repo=https://github.com/NongkaiOne/Rice-Leaf-Disease-Classification-and-MPG-Regression)
+Use the repository's root render.yaml, or Web Service settings: branch main, root directory classification, Dockerfile ./Dockerfile, Docker context ., health check /. The Dockerfile installs requirements.txt and copies app.py plus rice_leaf_app. No training runs during deployment. GIT_LFS_SKIP_SMUDGE=1 avoids downloading training images for the web service.
 
-Sign in to Render, open the link, review the service, and deploy. The final public URL is assigned by Render; add the verified URL to both README files after deployment succeeds.
+Required runtime assets: models/rice_cnn.onnx + rice_cnn.json + rice_svm.joblib, artifacts_cnn5/, examples_cnn5/, the inference modules and app.py. The CNN runs on CPU through ONNX Runtime. The dataset and PyTorch training checkpoint are for reproducibility, not web startup.
 
-For manual creation: select Web Service, this repository, branch `main`, root directory `classification`, Docker runtime, Dockerfile `./Dockerfile`, context `.`, and the Free plan. Set the environment variables from `render.yaml`.
-
-The app reads Render's `PORT` and binds to `0.0.0.0`. It loads the saved model and bundled example images; training images are not required to serve predictions. The Docker context excludes the training dataset. No training runs during deployment.
-
-Free services sleep after inactivity and may take time to start again. For the instructor's review period, allow startup time or choose an always-on paid plan yourself if needed.
-
-After the deployment becomes live, open the public URL without signing in and test image classification plus class comparison. A successful build alone does not verify predictions.
-
-References: [Render Blueprints](https://render.com/docs/blueprint-spec), [Free services](https://render.com/docs/free).
+After a successful deployment, open the public URL without login, check that the model selector offers CNN (DenseNet121) and SVM, upload an example for each model, and confirm Evaluation has five classes. Test predictions, not only HTTP health. A sleeping free service may need time to start; availability during grading still requires an actual external check.

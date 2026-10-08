@@ -1,0 +1,7 @@
+label,actual,predicted
+bacterial_leaf_blight,318,318
+brown_spot,349,341
+healthy,603,597
+rice_blast,605,616
+sheath_blight,353,348
+uncertain,0,8

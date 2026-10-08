@@ -1,0 +1,119 @@
+{
+  "architecture": "densenet121",
+  "classes": [
+    "rice_blast",
+    "bacterial_leaf_blight",
+    "sheath_blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "display_classes": [
+    {
+      "label": "rice_blast",
+      "english": "Rice Blast",
+      "thai": "โรคไหม้",
+      "source_labels": [
+        "leaf_blast"
+      ]
+    },
+    {
+      "label": "bacterial_leaf_blight",
+      "english": "Bacterial Leaf Blight",
+      "thai": "โรคขอบใบแห้ง",
+      "source_labels": [
+        "bacterial_leaf_blight"
+      ]
+    },
+    {
+      "label": "sheath_blight",
+      "english": "Sheath Blight",
+      "thai": "โรคกาบใบแห้ง",
+      "source_labels": [
+        "sheath_blight"
+      ]
+    },
+    {
+      "label": "brown_spot",
+      "english": "Brown Spot",
+      "thai": "โรคใบจุดสีน้ำตาล",
+      "source_labels": [
+        "brown_spot"
+      ]
+    },
+    {
+      "label": "healthy",
+      "english": "Healthy Rice Leaf",
+      "thai": "ใบข้าวปกติ",
+      "source_labels": [
+        "healthy"
+      ]
+    }
+  ],
+  "resize": [
+    256,
+    256
+  ],
+  "crop_size": 224,
+  "interpolation": "bilinear",
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "alpha_background": "white",
+  "exif_transpose": true,
+  "feature_scope": "full image; no background removal",
+  "weights_source": "ImageNet1K_V1",
+  "seed": 42,
+  "head_epochs": 3,
+  "finetune_epochs": 12,
+  "head_lr": 0.001,
+  "finetune_lr": 0.0001,
+  "batch_size": 16,
+  "fit_count": 8186,
+  "validation_count": 1368,
+  "class_weights": [
+    0.7325279712677002,
+    1.3851100206375122,
+    1.0309823751449585,
+    1.3321399688720703,
+    0.8387295007705688
+  ],
+  "label_smoothing": 0.05,
+  "selection": {
+    "selected_architecture": "densenet121",
+    "candidates": [
+      {
+        "architecture": "efficientnet_b0",
+        "validation_macro_f1": 0.9869786555319431,
+        "threshold": 0.6
+      },
+      {
+        "architecture": "densenet121",
+        "validation_macro_f1": 0.9874036490389029,
+        "threshold": 0.5
+      }
+    ],
+    "selection": "validation macro F1 only; thresholds from validation with coverage>=95%, accuracy/min recall loss<=1pp; freeze before test"
+  },
+  "manifest_sha256": "36b67aecabda3038c2f6fdebbe5ab2e42a56d9bdb29a3afad218679736f4a062",
+  "device": "cuda",
+  "torch_version": "2.7.1+cu128",
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "threshold": 0.5,
+  "best_epoch": {
+    "phase": "finetune",
+    "epoch": 8,
+    "train_loss": 0.2976340217574034,
+    "validation_accuracy": 0.9853801169590644,
+    "validation_macro_f1": 0.9874036490389029,
+    "seconds": 65.74775075912476
+  },
+  "onnx_parity_max_abs_error": 3.5762786865234375e-06,
+  "onnx_sha256": "b5e555b66eed27563577ed0fdbbf9ca424381f656c694a3640c60cd1b293a709"
+}

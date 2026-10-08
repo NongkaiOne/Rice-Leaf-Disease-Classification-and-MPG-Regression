@@ -1,0 +1,74 @@
+{
+  "status": "pass",
+  "url": "http://127.0.0.1:7863",
+  "examples": [
+    {
+      "model": "CNN (DenseNet121)",
+      "example": "rice_blast",
+      "prediction": "Rice Blast · โรคไหม้",
+      "status": "pass"
+    },
+    {
+      "model": "CNN (DenseNet121)",
+      "example": "bacterial_leaf_blight",
+      "prediction": "Bacterial Leaf Blight · โรคขอบใบแห้ง",
+      "status": "pass"
+    },
+    {
+      "model": "CNN (DenseNet121)",
+      "example": "sheath_blight",
+      "prediction": "Sheath Blight · โรคกาบใบแห้ง",
+      "status": "pass"
+    },
+    {
+      "model": "CNN (DenseNet121)",
+      "example": "brown_spot",
+      "prediction": "Brown Spot · โรคใบจุดสีน้ำตาล",
+      "status": "pass"
+    },
+    {
+      "model": "CNN (DenseNet121)",
+      "example": "healthy",
+      "prediction": "Healthy Rice Leaf · ใบข้าวปกติ",
+      "status": "pass"
+    },
+    {
+      "model": "SVM",
+      "example": "rice_blast",
+      "prediction": "Healthy Rice Leaf · ใบข้าวปกติ",
+      "status": "pass"
+    },
+    {
+      "model": "SVM",
+      "example": "bacterial_leaf_blight",
+      "prediction": "Bacterial Leaf Blight · โรคขอบใบแห้ง",
+      "status": "pass"
+    },
+    {
+      "model": "SVM",
+      "example": "sheath_blight",
+      "prediction": "Rice Blast · โรคไหม้",
+      "status": "pass"
+    },
+    {
+      "model": "SVM",
+      "example": "brown_spot",
+      "prediction": "Healthy Rice Leaf · ใบข้าวปกติ",
+      "status": "pass"
+    },
+    {
+      "model": "SVM",
+      "example": "healthy",
+      "prediction": "Healthy Rice Leaf · ใบข้าวปกติ",
+      "status": "pass"
+    }
+  ],
+  "empty_upload": "both models pass",
+  "tabs": [
+    "จำแนกภาพ · Classification",
+    "เปรียบเทียบคลาส · Class Comparison",
+    "ผลประเมิน · Evaluation",
+    "วิธีใช้งาน · About"
+  ],
+  "visual_browser_check": "not performed: browser tool failed to initialize"
+}

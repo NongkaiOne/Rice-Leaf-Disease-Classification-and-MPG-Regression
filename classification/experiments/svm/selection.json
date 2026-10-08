@@ -1,0 +1,16 @@
+{
+  "svm_C": 10.0,
+  "svm_candidates": [
+    {
+      "C": 1.0,
+      "validation_macro_f1": 0.8864255965115053
+    },
+    {
+      "C": 10.0,
+      "validation_macro_f1": 0.9428094486801598
+    }
+  ],
+  "fit": 8186,
+  "validation": 1368,
+  "test_not_evaluated": true
+}

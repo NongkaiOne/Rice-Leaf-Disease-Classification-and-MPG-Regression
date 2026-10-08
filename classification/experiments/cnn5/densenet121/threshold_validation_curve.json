@@ -1,0 +1,1521 @@
+[
+  {
+    "threshold": 0.3,
+    "accuracy": 0.9853801169590644,
+    "macro_f1": 0.9874036490389029,
+    "weighted_f1": 0.9853590929565514,
+    "minimum_recall": 0.9722222222222222,
+    "minimum_recall_class": "healthy",
+    "coverage": 1.0,
+    "accepted_accuracy": 0.9853801169590644,
+    "rejected": 0,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        367,
+        2,
+        0,
+        3,
+        5,
+        0
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        206,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0,
+        0,
+        315,
+        0
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9734748010610079,
+        "recall": 0.9734748010610079,
+        "f1-score": 0.9734748010610079,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 0.9898477157360406,
+        "recall": 1.0,
+        "f1-score": 0.9948979591836735,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.9856459330143541,
+        "recall": 0.9951690821256038,
+        "f1-score": 0.9903846153846154,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 0.984375,
+        "recall": 0.9722222222222222,
+        "f1-score": 0.9782608695652174,
+        "support": 324.0
+      },
+      "accuracy": 0.9853801169590644,
+      "macro avg": {
+        "precision": 0.9866686899622806,
+        "recall": 0.9881732210817669,
+        "f1-score": 0.9874036490389029,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9853702578234642,
+        "recall": 0.9853801169590644,
+        "f1-score": 0.9853590929565514,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.35,
+    "accuracy": 0.9853801169590644,
+    "macro_f1": 0.9874036490389029,
+    "weighted_f1": 0.9853590929565514,
+    "minimum_recall": 0.9722222222222222,
+    "minimum_recall_class": "healthy",
+    "coverage": 1.0,
+    "accepted_accuracy": 0.9853801169590644,
+    "rejected": 0,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        367,
+        2,
+        0,
+        3,
+        5,
+        0
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        206,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0,
+        0,
+        315,
+        0
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9734748010610079,
+        "recall": 0.9734748010610079,
+        "f1-score": 0.9734748010610079,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 0.9898477157360406,
+        "recall": 1.0,
+        "f1-score": 0.9948979591836735,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.9856459330143541,
+        "recall": 0.9951690821256038,
+        "f1-score": 0.9903846153846154,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 0.984375,
+        "recall": 0.9722222222222222,
+        "f1-score": 0.9782608695652174,
+        "support": 324.0
+      },
+      "accuracy": 0.9853801169590644,
+      "macro avg": {
+        "precision": 0.9866686899622806,
+        "recall": 0.9881732210817669,
+        "f1-score": 0.9874036490389029,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9853702578234642,
+        "recall": 0.9853801169590644,
+        "f1-score": 0.9853590929565514,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.4,
+    "accuracy": 0.9853801169590644,
+    "macro_f1": 0.9874036490389029,
+    "weighted_f1": 0.9853590929565514,
+    "minimum_recall": 0.9722222222222222,
+    "minimum_recall_class": "healthy",
+    "coverage": 1.0,
+    "accepted_accuracy": 0.9853801169590644,
+    "rejected": 0,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        367,
+        2,
+        0,
+        3,
+        5,
+        0
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        206,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0,
+        0,
+        315,
+        0
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9734748010610079,
+        "recall": 0.9734748010610079,
+        "f1-score": 0.9734748010610079,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 0.9898477157360406,
+        "recall": 1.0,
+        "f1-score": 0.9948979591836735,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.9856459330143541,
+        "recall": 0.9951690821256038,
+        "f1-score": 0.9903846153846154,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 0.984375,
+        "recall": 0.9722222222222222,
+        "f1-score": 0.9782608695652174,
+        "support": 324.0
+      },
+      "accuracy": 0.9853801169590644,
+      "macro avg": {
+        "precision": 0.9866686899622806,
+        "recall": 0.9881732210817669,
+        "f1-score": 0.9874036490389029,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9853702578234642,
+        "recall": 0.9853801169590644,
+        "f1-score": 0.9853590929565514,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.45,
+    "accuracy": 0.9853801169590644,
+    "macro_f1": 0.9877079292471658,
+    "weighted_f1": 0.9857194247821259,
+    "minimum_recall": 0.9722222222222222,
+    "minimum_recall_class": "healthy",
+    "coverage": 0.9992690058479532,
+    "accepted_accuracy": 0.986100950987564,
+    "rejected": 1,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        367,
+        2,
+        0,
+        3,
+        4,
+        1
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        206,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0,
+        0,
+        315,
+        0
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9734748010610079,
+        "recall": 0.9734748010610079,
+        "f1-score": 0.9734748010610079,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 0.9898477157360406,
+        "recall": 1.0,
+        "f1-score": 0.9948979591836735,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.9856459330143541,
+        "recall": 0.9951690821256038,
+        "f1-score": 0.9903846153846154,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 0.987460815047022,
+        "recall": 0.9722222222222222,
+        "f1-score": 0.9797822706065319,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.986100950987564,
+        "recall": 0.9853801169590644,
+        "f1-score": 0.9857404021937842,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9872858529716849,
+        "recall": 0.9881732210817669,
+        "f1-score": 0.9877079292471658,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9861011087556538,
+        "recall": 0.9853801169590644,
+        "f1-score": 0.9857194247821259,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.5,
+    "accuracy": 0.9831871345029239,
+    "macro_f1": 0.9878644885306249,
+    "weighted_f1": 0.9853179382344436,
+    "minimum_recall": 0.9681697612732095,
+    "minimum_recall_class": "rice_blast",
+    "coverage": 0.9956140350877193,
+    "accepted_accuracy": 0.9875183553597651,
+    "rejected": 6,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        365,
+        0,
+        0,
+        3,
+        4,
+        5
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        206,
+        0,
+        0
+      ],
+      [
+        9,
+        0,
+        0,
+        0,
+        314,
+        1
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9733333333333334,
+        "recall": 0.9681697612732095,
+        "f1-score": 0.9707446808510638,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.9856459330143541,
+        "recall": 0.9951690821256038,
+        "f1-score": 0.9903846153846154,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 0.9874213836477987,
+        "recall": 0.9691358024691358,
+        "f1-score": 0.9781931464174455,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.9875183553597651,
+        "recall": 0.9831871345029239,
+        "f1-score": 0.9853479853479854,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9892801299990973,
+        "recall": 0.9864949291735898,
+        "f1-score": 0.9878644885306249,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9874999291685123,
+        "recall": 0.9831871345029239,
+        "f1-score": 0.9853179382344436,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.55,
+    "accuracy": 0.9802631578947368,
+    "macro_f1": 0.988500851231011,
+    "weighted_f1": 0.9856028769072389,
+    "minimum_recall": 0.9602122015915119,
+    "minimum_recall_class": "rice_blast",
+    "coverage": 0.9890350877192983,
+    "accepted_accuracy": 0.991130820399113,
+    "rejected": 15,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        362,
+        0,
+        0,
+        1,
+        3,
+        11
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        206,
+        0,
+        1
+      ],
+      [
+        8,
+        0,
+        0,
+        0,
+        313,
+        3
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9783783783783784,
+        "recall": 0.9602122015915119,
+        "f1-score": 0.9692101740294511,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.9951690821256038,
+        "recall": 0.9951690821256038,
+        "f1-score": 0.9951690821256038,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 0.990506329113924,
+        "recall": 0.9660493827160493,
+        "f1-score": 0.978125,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.991130820399113,
+        "recall": 0.9802631578947368,
+        "f1-score": 0.9856670341786108,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9928107579235814,
+        "recall": 0.984286133286633,
+        "f1-score": 0.988500851231011,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9910619146795029,
+        "recall": 0.9802631578947368,
+        "f1-score": 0.9856028769072389,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.6,
+    "accuracy": 0.9780701754385965,
+    "macro_f1": 0.9876695691132928,
+    "weighted_f1": 0.9844574333459094,
+    "minimum_recall": 0.9522546419098143,
+    "minimum_recall_class": "rice_blast",
+    "coverage": 0.9868421052631579,
+    "accepted_accuracy": 0.9911111111111112,
+    "rejected": 18,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        359,
+        0,
+        0,
+        1,
+        3,
+        14
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        206,
+        0,
+        1
+      ],
+      [
+        8,
+        0,
+        0,
+        0,
+        313,
+        3
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9782016348773842,
+        "recall": 0.9522546419098143,
+        "f1-score": 0.9650537634408602,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.9951690821256038,
+        "recall": 0.9951690821256038,
+        "f1-score": 0.9951690821256038,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 0.990506329113924,
+        "recall": 0.9660493827160493,
+        "f1-score": 0.978125,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.9911111111111112,
+        "recall": 0.9780701754385965,
+        "f1-score": 0.9845474613686535,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9927754092233825,
+        "recall": 0.9826946213502934,
+        "f1-score": 0.9876695691132928,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.991013206857957,
+        "recall": 0.9780701754385965,
+        "f1-score": 0.9844574333459094,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.65,
+    "accuracy": 0.9751461988304093,
+    "macro_f1": 0.9872104830210414,
+    "weighted_f1": 0.9840145571426213,
+    "minimum_recall": 0.9522546419098143,
+    "minimum_recall_class": "rice_blast",
+    "coverage": 0.9817251461988304,
+    "accepted_accuracy": 0.9932985852568875,
+    "rejected": 25,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        359,
+        0,
+        0,
+        1,
+        2,
+        15
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        206,
+        0,
+        1
+      ],
+      [
+        6,
+        0,
+        0,
+        0,
+        309,
+        9
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9835616438356164,
+        "recall": 0.9522546419098143,
+        "f1-score": 0.967654986522911,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.9951690821256038,
+        "recall": 0.9951690821256038,
+        "f1-score": 0.9951690821256038,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 0.9935691318327974,
+        "recall": 0.9537037037037037,
+        "f1-score": 0.9732283464566929,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.9932985852568875,
+        "recall": 0.9751461988304093,
+        "f1-score": 0.9841386942087791,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9944599715588035,
+        "recall": 0.9802254855478243,
+        "f1-score": 0.9872104830210414,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9932157444735772,
+        "recall": 0.9751461988304093,
+        "f1-score": 0.9840145571426213,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.7,
+    "accuracy": 0.9678362573099415,
+    "macro_f1": 0.984265935413925,
+    "weighted_f1": 0.9813085139096266,
+    "minimum_recall": 0.941358024691358,
+    "minimum_recall_class": "healthy",
+    "coverage": 0.9722222222222222,
+    "accepted_accuracy": 0.9954887218045113,
+    "rejected": 38,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        357,
+        0,
+        0,
+        1,
+        0,
+        19
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        202,
+        0,
+        5
+      ],
+      [
+        5,
+        0,
+        0,
+        0,
+        305,
+        14
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9861878453038674,
+        "recall": 0.946949602122016,
+        "f1-score": 0.9661705006765899,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.9950738916256158,
+        "recall": 0.9758454106280193,
+        "f1-score": 0.9853658536585366,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 1.0,
+        "recall": 0.941358024691358,
+        "f1-score": 0.9697933227344993,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.9954887218045113,
+        "recall": 0.9678362573099415,
+        "f1-score": 0.9814677538917717,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9962523473858965,
+        "recall": 0.9728306074882787,
+        "f1-score": 0.984265935413925,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9954481821974127,
+        "recall": 0.9678362573099415,
+        "f1-score": 0.9813085139096266,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.75,
+    "accuracy": 0.9605263157894737,
+    "macro_f1": 0.9805056429337053,
+    "weighted_f1": 0.9774409038506867,
+    "minimum_recall": 0.9228395061728395,
+    "minimum_recall_class": "healthy",
+    "coverage": 0.9649122807017544,
+    "accepted_accuracy": 0.9954545454545455,
+    "rejected": 48,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        356,
+        0,
+        0,
+        1,
+        0,
+        20
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        265,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        199,
+        0,
+        8
+      ],
+      [
+        5,
+        0,
+        0,
+        0,
+        299,
+        20
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9861495844875346,
+        "recall": 0.9442970822281167,
+        "f1-score": 0.964769647696477,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 0.995,
+        "recall": 0.961352657004831,
+        "f1-score": 0.9778869778869779,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 1.0,
+        "recall": 0.9228395061728395,
+        "f1-score": 0.9598715890850722,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.9954545454545455,
+        "recall": 0.9605263157894737,
+        "f1-score": 0.9776785714285714,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9962299168975068,
+        "recall": 0.9656978490811573,
+        "f1-score": 0.9805056429337053,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9954264571285091,
+        "recall": 0.9605263157894737,
+        "f1-score": 0.9774409038506867,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.8,
+    "accuracy": 0.9510233918128655,
+    "macro_f1": 0.9759057717542972,
+    "weighted_f1": 0.9735051729652455,
+    "minimum_recall": 0.9227053140096618,
+    "minimum_recall_class": "brown_spot",
+    "coverage": 0.9532163742690059,
+    "accepted_accuracy": 0.9976993865030674,
+    "rejected": 64,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        352,
+        0,
+        0,
+        0,
+        0,
+        25
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        264,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        191,
+        0,
+        16
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        299,
+        22
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9915492957746479,
+        "recall": 0.9336870026525199,
+        "f1-score": 0.9617486338797814,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 0.9962264150943396,
+        "f1-score": 0.998109640831758,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 1.0,
+        "recall": 0.9227053140096618,
+        "f1-score": 0.9597989949748744,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 1.0,
+        "recall": 0.9228395061728395,
+        "f1-score": 0.9598715890850722,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.9976993865030674,
+        "recall": 0.9510233918128655,
+        "f1-score": 0.9738023952095808,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9983098591549296,
+        "recall": 0.9550916475858722,
+        "f1-score": 0.9759057717542972,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9976711144057326,
+        "recall": 0.9510233918128655,
+        "f1-score": 0.9735051729652455,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.85,
+    "accuracy": 0.9327485380116959,
+    "macro_f1": 0.965404922459266,
+    "weighted_f1": 0.9637924552593718,
+    "minimum_recall": 0.8599033816425121,
+    "minimum_recall_class": "brown_spot",
+    "coverage": 0.9342105263157895,
+    "accepted_accuracy": 0.9984350547730829,
+    "rejected": 90,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        346,
+        0,
+        0,
+        0,
+        0,
+        31
+      ],
+      [
+        0,
+        195,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        264,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        178,
+        0,
+        29
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        293,
+        29
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9942528735632183,
+        "recall": 0.9177718832891246,
+        "f1-score": 0.9544827586206897,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 0.9962264150943396,
+        "f1-score": 0.998109640831758,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 1.0,
+        "recall": 0.8599033816425121,
+        "f1-score": 0.9246753246753247,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 1.0,
+        "recall": 0.904320987654321,
+        "f1-score": 0.9497568881685575,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.9984350547730829,
+        "recall": 0.9327485380116959,
+        "f1-score": 0.9644746787603931,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9988505747126437,
+        "recall": 0.9356445335360595,
+        "f1-score": 0.965404922459266,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9984161793372319,
+        "recall": 0.9327485380116959,
+        "f1-score": 0.9637924552593718,
+        "support": 1368.0
+      }
+    }
+  },
+  {
+    "threshold": 0.9,
+    "accuracy": 0.8823099415204678,
+    "macro_f1": 0.9351205833235763,
+    "weighted_f1": 0.9355257848513908,
+    "minimum_recall": 0.7439613526570048,
+    "minimum_recall_class": "brown_spot",
+    "coverage": 0.8830409356725146,
+    "accepted_accuracy": 0.9991721854304636,
+    "rejected": 160,
+    "classes": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy"
+    ],
+    "confusion_matrix": [
+      [
+        337,
+        0,
+        0,
+        0,
+        0,
+        40
+      ],
+      [
+        0,
+        194,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        244,
+        0,
+        0,
+        21
+      ],
+      [
+        0,
+        0,
+        0,
+        154,
+        0,
+        53
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        278,
+        45
+      ]
+    ],
+    "confusion_columns": [
+      "rice_blast",
+      "bacterial_leaf_blight",
+      "sheath_blight",
+      "brown_spot",
+      "healthy",
+      "uncertain"
+    ],
+    "report": {
+      "rice_blast": {
+        "precision": 0.9970414201183432,
+        "recall": 0.8938992042440318,
+        "f1-score": 0.9426573426573427,
+        "support": 377.0
+      },
+      "bacterial_leaf_blight": {
+        "precision": 1.0,
+        "recall": 0.9948717948717949,
+        "f1-score": 0.9974293059125964,
+        "support": 195.0
+      },
+      "sheath_blight": {
+        "precision": 1.0,
+        "recall": 0.9207547169811321,
+        "f1-score": 0.9587426326129665,
+        "support": 265.0
+      },
+      "brown_spot": {
+        "precision": 1.0,
+        "recall": 0.7439613526570048,
+        "f1-score": 0.853185595567867,
+        "support": 207.0
+      },
+      "healthy": {
+        "precision": 1.0,
+        "recall": 0.8580246913580247,
+        "f1-score": 0.9235880398671097,
+        "support": 324.0
+      },
+      "micro avg": {
+        "precision": 0.9991721854304636,
+        "recall": 0.8823099415204678,
+        "f1-score": 0.937111801242236,
+        "support": 1368.0
+      },
+      "macro avg": {
+        "precision": 0.9994082840236687,
+        "recall": 0.8823023520223975,
+        "f1-score": 0.9351205833235763,
+        "support": 1368.0
+      },
+      "weighted avg": {
+        "precision": 0.9991846603688708,
+        "recall": 0.8823099415204678,
+        "f1-score": 0.9355257848513908,
+        "support": 1368.0
+      }
+    }
+  }
+]

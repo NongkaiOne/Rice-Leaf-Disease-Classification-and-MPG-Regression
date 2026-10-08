@@ -1,0 +1,8 @@
+{
+  "image_paths": 16533,
+  "unique_objects": 12111,
+  "objects_with_anonymous_download": 12111,
+  "errors": [],
+  "bytes_unique": 4823010084,
+  "check": "anonymous LFS download action available; not a full redownload"
+}

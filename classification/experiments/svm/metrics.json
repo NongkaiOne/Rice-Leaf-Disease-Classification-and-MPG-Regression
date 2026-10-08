@@ -1,0 +1,105 @@
+{
+  "architecture": "baseline_svm",
+  "policy": "raw",
+  "threshold": 0,
+  "accuracy": 0.8900359066427289,
+  "macro_f1": 0.9032889257376482,
+  "weighted_f1": 0.8912094538851569,
+  "minimum_recall": 0.8243626062322946,
+  "minimum_recall_class": "sheath_blight",
+  "coverage": 1.0,
+  "accepted_accuracy": 0.8900359066427289,
+  "rejected": 0,
+  "classes": [
+    "rice_blast",
+    "bacterial_leaf_blight",
+    "sheath_blight",
+    "brown_spot",
+    "healthy"
+  ],
+  "report": {
+    "rice_blast": {
+      "precision": 0.7800891530460624,
+      "recall": 0.8677685950413223,
+      "f1-score": 0.8215962441314554,
+      "support": 605.0
+    },
+    "bacterial_leaf_blight": {
+      "precision": 0.9968652037617555,
+      "recall": 1.0,
+      "f1-score": 0.9984301412872841,
+      "support": 318.0
+    },
+    "sheath_blight": {
+      "precision": 0.9732441471571907,
+      "recall": 0.8243626062322946,
+      "f1-score": 0.8926380368098159,
+      "support": 353.0
+    },
+    "brown_spot": {
+      "precision": 0.9475308641975309,
+      "recall": 0.8796561604584527,
+      "f1-score": 0.912332838038633,
+      "support": 349.0
+    },
+    "healthy": {
+      "precision": 0.8841761827079935,
+      "recall": 0.8988391376451078,
+      "f1-score": 0.8914473684210527,
+      "support": 603.0
+    },
+    "accuracy": 0.8900359066427289,
+    "macro avg": {
+      "precision": 0.9163811101741066,
+      "recall": 0.8941252998754354,
+      "f1-score": 0.9032889257376482,
+      "support": 2228.0
+    },
+    "weighted avg": {
+      "precision": 0.8960317621694132,
+      "recall": 0.8900359066427289,
+      "f1-score": 0.8912094538851569,
+      "support": 2228.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      525,
+      1,
+      6,
+      15,
+      58
+    ],
+    [
+      0,
+      318,
+      0,
+      0,
+      0
+    ],
+    [
+      53,
+      0,
+      291,
+      0,
+      9
+    ],
+    [
+      37,
+      0,
+      1,
+      307,
+      4
+    ],
+    [
+      58,
+      0,
+      1,
+      2,
+      542
+    ]
+  ],
+  "train_count": 8186,
+  "validation_count": 1368,
+  "test_count": 2228
+}
