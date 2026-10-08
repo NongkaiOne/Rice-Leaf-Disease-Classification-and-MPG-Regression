@@ -4,7 +4,7 @@
 
 **เว็บสำหรับผู้สอน:** https://rice-leaf-classification.onrender.com/
 
-**สถานะการเข้าถึงรุ่นล่าสุด:** ดู [STATUS.md](STATUS.md) และ [รายการตรวจ Purpose](PURPOSE_CHECKLIST.md) อย่าถือว่ามี URL แล้วเท่ากับตรวจการทำนายออนไลน์ผ่าน
+**การเผยแพร่เว็บ:** ดู [RENDER.md](RENDER.md) สำหรับการตั้งค่าและตรวจการทำนายหลัง deploy
 
 ## คลาสและข้อมูล
 

@@ -1,4 +1,4 @@
-﻿"""Generate and execute separate CNN and SVM notebooks with real saved outputs."""
+"""Generate and execute separate CNN and SVM notebooks with real saved outputs."""
 from pathlib import Path
 import sys,json,os
 import nbformat as n
@@ -121,7 +121,7 @@ for label in CLASSES:
     display(pd.DataFrame(rows,columns=['Class','Score (%)']))''')
  md('''## การนำไปใช้
 
-Gradio app ใช้ไฟล์โมเดลที่บันทึกและ preprocessing เดียวกับตอนฝึก เลือก CNN หรือ SVM ในหน้า Classification แล้วดูผลเปรียบเทียบใน Evaluation เปิดเว็บจากลิงก์ README ได้โดยไม่ต้องเปิดเครื่องนักศึกษา ตรวจสถานะการเผยแพร่จริงที่ STATUS.md
+Gradio app ใช้ไฟล์โมเดลที่บันทึกและ preprocessing เดียวกับตอนฝึก เลือก CNN หรือ SVM ในหน้า Classification แล้วดูผลเปรียบเทียบใน Evaluation เปิดเว็บจากลิงก์ README ได้โดยไม่ต้องเปิดเครื่องนักศึกษา ดูวิธีเผยแพร่และตรวจเว็บใน RENDER.md
 
 ข้อมูลโมเดล/ผลรายคลาส/ข้อจำกัดและหลักฐานใน experiments/cnn5/RESULTS.md''')
  return n.v4.new_notebook(cells=cells,metadata={'kernelspec':{'name':'rice-python','display_name':'Rice Python','language':'python'}})

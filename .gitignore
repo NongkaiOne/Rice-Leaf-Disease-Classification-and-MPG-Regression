@@ -11,3 +11,7 @@ tmp/
 digit_svm_app/
 # Unused augmentation set; primary labeled dataset remains included.
 Rice_Leaf_AUG/
+
+# Keep project status and assignment instructions local only.
+[Ss][Tt][Aa][Tt][Uu][Ss].[Mm][Dd]
+[Pp][Uu][Rr][Pp][Oo][Ss][Ee]*.[Mm][Dd]

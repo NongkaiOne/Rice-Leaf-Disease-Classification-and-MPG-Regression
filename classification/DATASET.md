@@ -12,6 +12,6 @@ After audit, active manifest uses fit 8,186 / validation 1,368 / test 2,228. The
 
 ## Download
 
-Images are tracked with Git LFS. Run git lfs install, clone the public repository, then git lfs pull. A GitHub page showing a pointer is not a downloaded image; real objects must be retrievable. Current access checks and any outstanding checks are recorded in PURPOSE_CHECKLIST.md/STATUS.md.
+Images are tracked with Git LFS. Run git lfs install, clone the public repository, then git lfs pull. A GitHub page showing a pointer is not a downloaded image; real objects must be retrievable. Public access checks are recorded in data_audit/public_lfs_check.json and data_audit/public_image_samples.json; deployment instructions are in RENDER.md.
 
 Inventory: data_audit/retained_inventory.json. Removal log: data_audit/cleanup_completed.json. Models and app do not load unused class data.

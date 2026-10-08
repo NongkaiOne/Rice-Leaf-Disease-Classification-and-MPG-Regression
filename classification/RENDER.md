@@ -2,7 +2,7 @@
 
 Public URL: https://rice-leaf-classification.onrender.com/
 
-The updated app contains DenseNet121 and SVM, five classes, model selection and an Evaluation comparison. Current external verification status is recorded in STATUS.md; the existence of the URL alone does not confirm that this version is deployed.
+The updated app contains DenseNet121 and SVM, five classes, model selection and an Evaluation comparison. See the latest observed state below and verify predictions after deployment.
 
 Use the repository's root render.yaml, or Web Service settings: branch main, root directory classification, Dockerfile ./Dockerfile, Docker context ., health check /. The Dockerfile installs requirements.txt and copies app.py plus rice_leaf_app. No training runs during deployment. GIT_LFS_SKIP_SMUDGE=1 avoids downloading training images for the web service.
 
