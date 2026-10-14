@@ -210,7 +210,7 @@ MPG สูงหมายถึงวิ่งได้ไกลขึ้นต�
 ```
 
 ## 10. Deployment
-เตรียม Docker และ Blueprint `../render-mpg.yaml` สำหรับ Render แยกจาก Rice แล้ว
+เว็บ Auto MPG Regression ได้รับการเผยแพร่บน Render โดยใช้ Docker และ Blueprint ../render-mpg.yaml แยกจากเว็บ Rice Leaf Disease Classification
 
 ใน Render เลือก **New → Web Service** แล้วเลือก repository นี้ ตั้งค่า:
 
@@ -241,16 +241,25 @@ Health check ใช้ HTTP GET `/`.
 
 เว็บสาธารณะ: [Auto MPG Regression](https://auto-mpg-regression-opb7.onrender.com/)
 
-ผลตรวจสอบวันที่ **14 ตุลาคม 2026**: `/config` ตอบ HTTP 200 และการทำนายตัวอย่าง Chevrolet
-ผ่าน API ให้ **14.94 MPG**. อย่างไรก็ตาม service ยังแสดงอินเทอร์เฟซรุ่นเก่า:
-prediction event มี 7 inputs และยังไม่มีตัวเลือกระบบหน่วย Metric/US, หน่วยผลลัพธ์ หรือ JavaScript สำหรับ tooltip.
-จึงยังไม่ยืนยันว่า UI ล่าสุดใน repository ถูก deploy แล้ว.
+ผลตรวจสอบ production วันที่ **14 ตุลาคม 2026**: เว็บไซต์และ `/config` ตอบ HTTP 200,
+Gradio 6.5.1 เริ่มทำงานสำเร็จ โดย Prediction Event รับข้อมูล 9 รายการ ประกอบด้วยคุณลักษณะรถยนต์ 7 ตัวแปร ตัวเลือกหน่วยผลลัพธ์ และ Session State สำหรับจัดการระบบหน่วย
+การทดสอบ Chromium ผ่าน URL สาธารณะยืนยัน Metric/US, kg/lb, cc/L/cu in, hp/kW
+และผลลัพธ์ US MPG / km/L / L/100 km พร้อม tooltip แบบ hover, click/tap, keyboard focus และ Escape.
+ตัวอย่างรถ, Reset และ input validation ทำงาน; layout ที่ 1366, 768, 390 และ 320px
+ไม่พบ horizontal overflow, controls ซ้อนทับ หรือ label ถูกตัด และไม่พบ browser interaction blocker ที่ทำซ้ำได้.
 
-ขั้นตอนที่เหลือ: อัปโหลดไฟล์ Regression ที่แก้แล้วขึ้น GitHub ด้วยตนเอง แล้ว deploy commit ล่าสุดของ `main`
-ไปยัง Regression service เดิม โดยตรวจ Root Directory ให้เป็น `regression_auto_mpg` ตามการตั้งค่าด้านบน.
-หลัง deploy ให้ตรวจ health check และทดลอง Metric/US, หน่วยรายช่อง, tooltip, ตัวอย่างรถ และ Reset
-ผ่าน URL สาธารณะ. ตัวอย่าง Chevrolet ต้องให้ผลเทียบเท่า **14.94 US MPG / 6.35 km/L / 15.75 L/100 km**.
-Render Free พัก service เมื่อไม่มีการใช้งาน จึงอาจต้องรอเปิดครั้งแรก.
+ตัวอย่าง Chevrolet ในหน่วย US และข้อมูล Metric ที่เทียบเท่ากันให้ **14.94 US MPG / 6.35 km/L / 15.75 L/100 km**.
+การสลับหน่วยซ้ำไม่ทำให้ค่าปริมาณทางกายภาพคลาดเคลื่อนเกินความละเอียดตัวเลขที่แสดง.
+CSS และ JavaScript สำหรับ tooltip ที่ production ให้บริการตรงกับ GitHub `main` ที่ตรวจสอบ;
+UI ล่าสุดจึงปรากฏบน service แล้ว แต่ยังไม่ยืนยัน exact deployed Git commit hash โดยอิสระ.
+
+### หมายเหตุการใช้งานและการบำรุงรักษา
+
+เว็บแอปพลิเคชันได้รับการ Deploy และผ่านการตรวจสอบการทำงานบน Render แล้ว โดยใช้โมเดล Linear Regression ที่ฝึกและบันทึกไว้ ไม่จำเป็นต้องฝึกโมเดลใหม่เมื่อเปิดเว็บ
+
+หากมีการอัปเดตซอร์สโค้ดของเว็บแอปในอนาคต ควร Deploy เวอร์ชันล่าสุดและทดสอบระบบเลือกหน่วย การทำนาย Tooltip ตัวอย่างข้อมูล และ Reset อีกครั้ง
+
+บริการ Render Free อาจเข้าสู่สถานะพักเมื่อไม่มีการใช้งาน จึงอาจต้องรอให้บริการเริ่มทำงานเมื่อเปิดเว็บไซต์ครั้งแรก
 
 ## 11. ข้อจำกัด
 - ชุดข้อมูลมีขนาดค่อนข้างเล็ก (398 แถว)
