@@ -141,7 +141,27 @@ class RegressionAppTests(unittest.TestCase):
             for section in ("prediction", "evaluation", "about"):
                 self.assertIn(f'href="#{section}"', header["props"]["value"])
             prediction_event = next(event for event in config["dependencies"] if event["api_name"] == "predict_mpg")
-            self.assertEqual(len(prediction_event["inputs"]), 7)
+            components = {component["id"]: component for component in config["components"]}
+            prediction_inputs = [components[index] for index in prediction_event["inputs"]]
+            self.assertEqual(len(prediction_inputs), 9)
+            self.assertEqual(
+                [(component["type"], component["props"].get("label"))
+                 for component in prediction_inputs[:7]],
+                [("dropdown", "กระบอกสูบ (Cylinders)"),
+                 ("number", "ปริมาตรกระบอกสูบ (L)"),
+                 ("number", "กำลังเครื่องยนต์ (kW)"),
+                 ("number", "น้ำหนักรถ (kg)"),
+                 ("number", "Acceleration (s)"),
+                 ("number", "ปีรุ่น (Model year)"),
+                 ("dropdown", "แหล่งกำเนิด (Origin)")],
+            )
+            self.assertEqual(prediction_inputs[7]["type"], "dropdown")
+            self.assertEqual(prediction_inputs[7]["props"].get("elem_id"), "output-unit")
+            self.assertEqual(prediction_inputs[8]["type"], "state")
+            switch_event = next(event for event in config["dependencies"] if event["api_name"] == "switch_units")
+            self.assertEqual(prediction_event["inputs"][8], switch_event["inputs"][-1])
+            self.assertEqual(prediction_event["outputs"][1], prediction_event["inputs"][8])
+            self.assertIs(demo.fns[prediction_event["id"]].fn, app.predict_vehicle)
             buttons = [c["props"]["value"] for c in config["components"] if c["type"] == "button"]
             self.assertFalse(any("flag" in label.lower() for label in buttons))
             self.assertEqual(app.reset_inputs(), (*app.DEFAULT_INPUTS, app.EMPTY_RESULT))
